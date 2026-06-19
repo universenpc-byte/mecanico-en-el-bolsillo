@@ -1,0 +1,1504 @@
+[
+  {
+    "code": "P0100",
+    "category": "P",
+    "titulo": "Fallo en el circuito de flujo de masa de aire",
+    "description": "Sensor de flujo de masa de aire (MAF) defectuoso o circuito abierto/curto.",
+    "causas": [
+      "Sensor MAF sucio",
+      "Conexiones electricas sueltas",
+      "Fuga de aire despues del sensor"
+    ],
+    "sintomas": [
+      "Luz check engine encendida",
+      "Motor falla en ralenti",
+      "Perdida de potencia"
+    ],
+    "urgencia": "media",
+    "reparacion": "Limpiar o reemplazar sensor MAF"
+  },
+  {
+    "code": "P0101",
+    "category": "P",
+    "titulo": "Rango/rendimiento del circuito de flujo de masa de aire",
+    "description": "La senal del sensor MAF esta fuera del rango esperado.",
+    "causas": [
+      "Sensor MAF descalibrado",
+      "Fuga de aire",
+      "Filtro de aire sucio"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor vacila"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar fugas y limpiar sensor"
+  },
+  {
+    "code": "P0102",
+    "category": "P",
+    "titulo": "Senal baja del circuito de flujo de masa de aire",
+    "description": "La senal del MAF es menor a la esperada.",
+    "causas": [
+      "Corto a tierra en el circuito",
+      "Sensor MAF defectuoso"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Perdida de potencia severa"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor MAF"
+  },
+  {
+    "code": "P0103",
+    "category": "P",
+    "titulo": "Senal alta del circuito de flujo de masa de aire",
+    "description": "La senal del MAF es mayor a la esperada.",
+    "causas": [
+      "Corto a voltaje",
+      "Sensor MAF defectuoso"
+    ],
+    "sintomas": [
+      "Motor acelera solo",
+      "Consumo excesivo de combustible"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor MAF"
+  },
+  {
+    "code": "P0105",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de presion del colector",
+    "description": "Sensor MAP defectuoso o circuito problematico.",
+    "causas": [
+      "Sensor MAP defectuoso",
+      "Conexiones sueltas",
+      "Fuga de vacio"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor falla"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar sensor MAP y conexiones"
+  },
+  {
+    "code": "P0106",
+    "category": "P",
+    "titulo": "Rango/rendimiento del circuito del sensor MAP",
+    "description": "La senal del MAP esta fuera de rango.",
+    "causas": [
+      "Sensor MAP descalibrado",
+      "Fuga de vacio",
+      "Colector de admision danado"
+    ],
+    "sintomas": [
+      "Motor irregular",
+      "Perdida de potencia"
+    ],
+    "urgencia": "media",
+    "reparacion": "Inspeccionar sistema de vacio"
+  },
+  {
+    "code": "P0107",
+    "category": "P",
+    "titulo": "Senal baja del circuito del sensor MAP",
+    "description": "Senal del MAP menor a la esperada.",
+    "causas": [
+      "Corto a tierra",
+      "Sensor MAP defectuoso"
+    ],
+    "sintomas": [
+      "Motor no arranca bien",
+      "Marcha lenta irregular"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor MAP"
+  },
+  {
+    "code": "P0108",
+    "category": "P",
+    "titulo": "Senal alta del circuito del sensor MAP",
+    "description": "Senal del MAP mayor a la esperada.",
+    "causas": [
+      "Corto a voltaje",
+      "Sensor MAP defectuoso"
+    ],
+    "sintomas": [
+      "Motor con exceso de combustible",
+      "Humo negro"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor MAP"
+  },
+  {
+    "code": "P0110",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de temperatura de aire de admision",
+    "description": "Sensor IAT defectuoso o circuito abierto.",
+    "causas": [
+      "Sensor IAT defectuoso",
+      "Conexiones sueltas"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Arranque dificil en frio"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor IAT"
+  },
+  {
+    "code": "P0111",
+    "category": "P",
+    "titulo": "Rango/rendimiento del sensor de temperatura de aire",
+    "description": "La senal del IAT esta fuera de rango esperado.",
+    "causas": [
+      "Sensor IAT descalibrado",
+      "Fuga de aire"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Rendimiento irregular"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar sensor IAT"
+  },
+  {
+    "code": "P0112",
+    "category": "P",
+    "titulo": "Senal baja del circuito del sensor IAT",
+    "description": "Temperatura de aire de admision muy alta reportada.",
+    "causas": [
+      "Corto a tierra",
+      "Sensor IAT defectuoso"
+    ],
+    "sintomas": [
+      "Motor con mezcla rica"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor IAT"
+  },
+  {
+    "code": "P0113",
+    "category": "P",
+    "titulo": "Senal alta del circuito del sensor IAT",
+    "description": "Temperatura de aire de admision muy baja reportada.",
+    "causas": [
+      "Corto a voltaje",
+      "Circuito abierto"
+    ],
+    "sintomas": [
+      "Motor con mezcla pobre"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar cableado del sensor"
+  },
+  {
+    "code": "P0115",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de temperatura del refrigerante",
+    "description": "Sensor ECT defectuoso o circuito problematico.",
+    "causas": [
+      "Sensor ECT defectuoso",
+      "Conexiones sueltas",
+      "Cableado danado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Sobrecalentamiento",
+      "Gauge de temperatura inestable"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor ECT"
+  },
+  {
+    "code": "P0116",
+    "category": "P",
+    "titulo": "Rango/rendimiento del circuito del sensor ECT",
+    "description": "La senal del sensor de temperatura no cambia como se espera.",
+    "causas": [
+      "Sensor ECT descalibrado",
+      "Termostatico atascado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor tarda en calentar"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar termostato y sensor"
+  },
+  {
+    "code": "P0117",
+    "category": "P",
+    "titulo": "Senal baja del circuito del sensor ECT",
+    "description": "Temperatura del refrigerante reportada muy alta.",
+    "causas": [
+      "Corto a tierra",
+      "Sensor defectuoso"
+    ],
+    "sintomas": [
+      "Sobrecalentamiento",
+      "Gauge en rojo"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Detener motor y verificar refrigerante"
+  },
+  {
+    "code": "P0118",
+    "category": "P",
+    "titulo": "Senal alta del circuito del sensor ECT",
+    "description": "Temperatura del refrigerante reportada muy baja.",
+    "causas": [
+      "Corto a voltaje",
+      "Circuito abierto"
+    ],
+    "sintomas": [
+      "Motor frio persiste",
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar cableado del sensor"
+  },
+  {
+    "code": "P0120",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de posicion del acelerador",
+    "description": "Sensor TPS (Throttle Position Sensor) defectuoso.",
+    "causas": [
+      "TPS defectuoso",
+      "Conexiones sueltas",
+      "Resina en el acelerador"
+    ],
+    "sintomas": [
+      "Aceleracion irregular",
+      "Motor vacila"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar TPS"
+  },
+  {
+    "code": "P0121",
+    "category": "P",
+    "titulo": "Rango/rendimiento del circuito del TPS",
+    "description": "La senal del TPS esta fuera de rango esperado.",
+    "causas": [
+      "TPS descalibrado",
+      "Cable del acelerador flojo"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Aceleracion perezosa"
+    ],
+    "urgencia": "media",
+    "reparacion": "Calibrar o reemplazar TPS"
+  },
+  {
+    "code": "P0122",
+    "category": "P",
+    "titulo": "Senal baja del circuito del TPS",
+    "description": "Senal del TPS menor a la esperada en ralenti.",
+    "causas": [
+      "Corto a tierra",
+      "TPS defectuoso"
+    ],
+    "sintomas": [
+      "Motor no responde al acelerador"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar TPS"
+  },
+  {
+    "code": "P0123",
+    "category": "P",
+    "titulo": "Senal alta del circuito del TPS",
+    "description": "Senal del TPS mayor a la esperada.",
+    "causas": [
+      "Corto a voltaje",
+      "TPS defectuoso"
+    ],
+    "sintomas": [
+      "Aceleracion fantasma"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar TPS"
+  },
+  {
+    "code": "P0130",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de oxigeno (Banco 1, Sensor 1)",
+    "description": "Sensor O2 delantero del banco 1 presenta fallo electrico.",
+    "causas": [
+      "Sensor O2 defectuoso",
+      "Cableado danado",
+      "Fuga de escape"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Aumento en consumo de combustible"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0131",
+    "category": "P",
+    "titulo": "Senal baja del circuito del sensor O2 (Banco 1, Sensor 1)",
+    "description": "Voltaje del sensor O2 delantero es bajo.",
+    "causas": [
+      "Fuga de escape antes del sensor",
+      "Sensor O2 defectuoso"
+    ],
+    "sintomas": [
+      "Motor pobre",
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar fugas de escape"
+  },
+  {
+    "code": "P0132",
+    "category": "P",
+    "titulo": "Senal alta del circuito del sensor O2 (Banco 1, Sensor 1)",
+    "description": "Voltaje del sensor O2 delantero es alto.",
+    "causas": [
+      "Corto a voltaje",
+      "Sensor O2 defectuoso"
+    ],
+    "sintomas": [
+      "Motor rico",
+      "Humo negro"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0133",
+    "category": "P",
+    "titulo": "Respuesta lenta del sensor O2 (Banco 1, Sensor 1)",
+    "description": "El sensor O2 delantero responde mas lento de lo normal.",
+    "causas": [
+      "Sensor O2 envejecido",
+      "Fuga de escape"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Rendimiento reducido"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0134",
+    "category": "P",
+    "titulo": "Sin actividad del sensor O2 (Banco 1, Sensor 1)",
+    "description": "No se detecta actividad en el sensor O2 delantero.",
+    "causas": [
+      "Sensor O2 muerto",
+      "Cableado abierto"
+    ],
+    "sintomas": [
+      "Check engine",
+      "No entra en modo cerrado"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0135",
+    "category": "P",
+    "titulo": "Fallo en el calentador del sensor O2 (Banco 1, Sensor 1)",
+    "description": "Circuito del calentador del sensor O2 delantero defectuoso.",
+    "causas": [
+      "Calentador del sensor quemado",
+      "Fusible",
+      "Relé"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Luz de motor"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar fusible y reemplazar sensor"
+  },
+  {
+    "code": "P0136",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor O2 (Banco 1, Sensor 2)",
+    "description": "Sensor O2 trasero del banco 1 presenta fallo electrico.",
+    "causas": [
+      "Sensor O2 trasero defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Reemplazar sensor O2 trasero"
+  },
+  {
+    "code": "P0137",
+    "category": "P",
+    "titulo": "Senal baja del sensor O2 (Banco 1, Sensor 2)",
+    "description": "Voltaje del sensor O2 trasero bajo.",
+    "causas": [
+      "Fuga de escape",
+      "Sensor defectuoso"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar fugas"
+  },
+  {
+    "code": "P0138",
+    "category": "P",
+    "titulo": "Senal alta del sensor O2 (Banco 1, Sensor 2)",
+    "description": "Voltaje del sensor O2 trasero alto.",
+    "causas": [
+      "Corto a voltaje",
+      "Sensor defectuoso"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0140",
+    "category": "P",
+    "titulo": "Sin actividad del sensor O2 (Banco 1, Sensor 2)",
+    "description": "No hay actividad en el sensor O2 trasero.",
+    "causas": [
+      "Sensor muerto",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Reemplazar sensor"
+  },
+  {
+    "code": "P0141",
+    "category": "P",
+    "titulo": "Fallo en el calentador del sensor O2 (Banco 1, Sensor 2)",
+    "description": "Problema en el calentador del sensor O2 trasero.",
+    "causas": [
+      "Calentador quemado",
+      "Fusible"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar fusible y sensor"
+  },
+  {
+    "code": "P0150",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor O2 (Banco 2, Sensor 1)",
+    "description": "Sensor O2 delantero del banco 2 presenta fallo.",
+    "causas": [
+      "Sensor defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar sensor O2"
+  },
+  {
+    "code": "P0171",
+    "category": "P",
+    "titulo": "Sistema demasiado pobre (Banco 1)",
+    "description": "Mezcla aire-combustible demasiado pobre en banco 1.",
+    "causas": [
+      "Fuga de vacio",
+      "Inyectores sucios",
+      "Sensor MAF sucio",
+      "Baja presion de combustible"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor titubea",
+      "Perdida de potencia"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar fugas de vacio e inyectores"
+  },
+  {
+    "code": "P0172",
+    "category": "P",
+    "titulo": "Sistema demasiado rico (Banco 1)",
+    "description": "Mezcla aire-combustible demasiado rica en banco 1.",
+    "causas": [
+      "Inyectores con fugas",
+      "Sensor O2 defectuoso",
+      "Filtro de aire tapado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Humo negro",
+      "Olor a gasolina"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar inyectores y sensores"
+  },
+  {
+    "code": "P0174",
+    "category": "P",
+    "titulo": "Sistema demasiado pobre (Banco 2)",
+    "description": "Mezcla aire-combustible demasiado pobre en banco 2.",
+    "causas": [
+      "Fuga de vacio",
+      "Sensor MAF sucio",
+      "Baja presion de combustible"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor vacila"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar fugas y presion de combustible"
+  },
+  {
+    "code": "P0175",
+    "category": "P",
+    "titulo": "Sistema demasiado rico (Banco 2)",
+    "description": "Mezcla aire-combustible demasiado rica en banco 2.",
+    "causas": [
+      "Inyectores con fugas",
+      "Sensor O2 defectuoso"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Humo negro"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar inyectores"
+  },
+  {
+    "code": "P0200",
+    "category": "P",
+    "titulo": "Fallo en el circuito del inyector",
+    "description": "Problema electrico en el circuito de inyectores.",
+    "causas": [
+      "Inyector defectuoso",
+      "Cableado",
+      "ECU"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor falla"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar inyectores individualmente"
+  },
+  {
+    "code": "P0201",
+    "category": "P",
+    "titulo": "Fallo en el circuito del inyector cilindro 1",
+    "description": "Problema electrico en el inyector del cilindro 1.",
+    "causas": [
+      "Inyector defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Fallido de encendido cilindro 1"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar inyector"
+  },
+  {
+    "code": "P0202",
+    "category": "P",
+    "titulo": "Fallo en el circuito del inyector cilindro 2",
+    "description": "Problema electrico en el inyector del cilindro 2.",
+    "causas": [
+      "Inyector defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Fallido de encendido cilindro 2"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar inyector"
+  },
+  {
+    "code": "P0203",
+    "category": "P",
+    "titulo": "Fallo en el circuito del inyector cilindro 3",
+    "description": "Problema electrico en el inyector del cilindro 3.",
+    "causas": [
+      "Inyector defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Fallido de encendido cilindro 3"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar inyector"
+  },
+  {
+    "code": "P0204",
+    "category": "P",
+    "titulo": "Fallo en el circuito del inyector cilindro 4",
+    "description": "Problema electrico en el inyector del cilindro 4.",
+    "causas": [
+      "Inyector defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Fallido de encendido cilindro 4"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar inyector"
+  },
+  {
+    "code": "P0300",
+    "category": "P",
+    "titulo": "Fallo de encendido aleatorio/detectado multiples cilindros",
+    "description": "El motor presenta fallos de encendido en multiples cilindros.",
+    "causas": [
+      "Bujias gastadas",
+      "Bobinas defectuosas",
+      "Baja compresion",
+      "Inyectores sucios"
+    ],
+    "sintomas": [
+      "Motor vibra",
+      "Perdida de potencia",
+      "Consumo alto"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Cambiar bujias y bobinas"
+  },
+  {
+    "code": "P0301",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 1",
+    "description": "Fallo de encendido especifico en el cilindro 1.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio",
+      "Baja compresion"
+    ],
+    "sintomas": [
+      "Vibra del motor",
+      "Check engine parpadeando"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar bujia, bobina e inyector del cilindro"
+  },
+  {
+    "code": "P0302",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 2",
+    "description": "Fallo de encendido en el cilindro 2.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio"
+    ],
+    "sintomas": [
+      "Vibra del motor",
+      "Perdida de potencia"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar componentes del cilindro 2"
+  },
+  {
+    "code": "P0303",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 3",
+    "description": "Fallo de encendido en el cilindro 3.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio"
+    ],
+    "sintomas": [
+      "Vibra del motor",
+      "Check engine"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar componentes del cilindro 3"
+  },
+  {
+    "code": "P0304",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 4",
+    "description": "Fallo de encendido en el cilindro 4.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio"
+    ],
+    "sintomas": [
+      "Vibra del motor",
+      "Check engine"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar componentes del cilindro 4"
+  },
+  {
+    "code": "P0305",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 5",
+    "description": "Fallo de encendido en el cilindro 5.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio"
+    ],
+    "sintomas": [
+      "Vibra del motor"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar componentes del cilindro 5"
+  },
+  {
+    "code": "P0306",
+    "category": "P",
+    "titulo": "Fallo de encendido detectado cilindro 6",
+    "description": "Fallo de encendido en el cilindro 6.",
+    "causas": [
+      "Bujia defectuosa",
+      "Bobina mala",
+      "Inyector sucio"
+    ],
+    "sintomas": [
+      "Vibra del motor"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar componentes del cilindro 6"
+  },
+  {
+    "code": "P0325",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de detonacion 1",
+    "description": "Sensor de detonacion (knock) del banco 1 defectuoso.",
+    "causas": [
+      "Sensor de detonacion defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor hace ruido de martilleo"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor de detonacion"
+  },
+  {
+    "code": "P0335",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de posicion del ciguenal",
+    "description": "Sensor CKP defectuoso o circuito problematico.",
+    "causas": [
+      "Sensor CKP defectuaro",
+      "Cableado",
+      "Reluctor danado"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Marcha irregular"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Reemplazar sensor CKP"
+  },
+  {
+    "code": "P0336",
+    "category": "P",
+    "titulo": "Rango/rendimiento del sensor CKP",
+    "description": "La senal del sensor CKP esta fuera de rango.",
+    "causas": [
+      "Reluctor danado",
+      "Sensor CKP descalibrado"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Fallas intermitentes"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor CKP"
+  },
+  {
+    "code": "P0340",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sensor de posicion del arbol de levas",
+    "description": "Sensor CMP defectuoso o circuito problematico.",
+    "causas": [
+      "Sensor CMP defectuoso",
+      "Cableado",
+      "Cadena de distribucion"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Fallas de encendido"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor CMP"
+  },
+  {
+    "code": "P0341",
+    "category": "P",
+    "titulo": "Rango/rendimiento del sensor CMP",
+    "description": "Senal del sensor CMP fuera de rango.",
+    "causas": [
+      "Sensor CMP defectuoso",
+      "Cadena de distribucion floja"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Fallas"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar cadena de distribucion"
+  },
+  {
+    "code": "P0350",
+    "category": "P",
+    "titulo": "Fallo en el circuito de la bobina de encendido principal",
+    "description": "Problema electrico en la bobina de encendido principal.",
+    "causas": [
+      "Bobina defectuosa",
+      "Cableado",
+      "ECU"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Fallas severas"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Reemplazar bobina de encendido"
+  },
+  {
+    "code": "P0351",
+    "category": "P",
+    "titulo": "Fallo en el circuito de la bobina A",
+    "description": "Problema en la bobina de encendido A.",
+    "causas": [
+      "Bobina defectuosa",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Falla de encendido",
+      "Motor vibra"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar bobina"
+  },
+  {
+    "code": "P0352",
+    "category": "P",
+    "titulo": "Fallo en el circuito de la bobina B",
+    "description": "Problema en la bobina de encendido B.",
+    "causas": [
+      "Bobina defectuosa",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Falla de encendido"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar bobina"
+  },
+  {
+    "code": "P0400",
+    "category": "P",
+    "titulo": "Fallo en el sistema de recirculacion de gases de escape (EGR)",
+    "description": "Flujo incorrecto en el sistema EGR.",
+    "causas": [
+      "Valvula EGR atascada",
+      "Tuberia EGR tapada",
+      "Solenoide defectuoso"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor con detonacion"
+    ],
+    "urgencia": "media",
+    "reparacion": "Limpiar o reemplazar valvula EGR"
+  },
+  {
+    "code": "P0401",
+    "category": "P",
+    "titulo": "Flujo insuficiente en el sistema EGR",
+    "description": "El flujo de gases de escape a traves del EGR es menor al esperado.",
+    "causas": [
+      "Valvula EGR tapada",
+      "Tuberia obstruida"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Motor con detonacion"
+    ],
+    "urgencia": "media",
+    "reparacion": "Limpiar valvula y tuberias EGR"
+  },
+  {
+    "code": "P0403",
+    "category": "P",
+    "titulo": "Fallo en el circuito de control del EGR",
+    "description": "Problema electrico en el circuito de control del EGR.",
+    "causas": [
+      "Solenoide EGR defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar solenoide y cableado"
+  },
+  {
+    "code": "P0420",
+    "category": "P",
+    "titulo": "Eficiencia del catalizador por debajo del umbral (Banco 1)",
+    "description": "El catalizador del banco 1 ha perdido eficiencia.",
+    "causas": [
+      "Catalizador envejecido",
+      "Sensor O2 trasero defectuoso",
+      "Fuga de escape"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Olor a huevo podrido"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar catalizador"
+  },
+  {
+    "code": "P0430",
+    "category": "P",
+    "titulo": "Eficiencia del catalizador por debajo del umbral (Banco 2)",
+    "description": "El catalizador del banco 2 ha perdido eficiencia.",
+    "causas": [
+      "Catalizador envejecido",
+      "Sensor O2 defectuoso"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Olor a huevo podrido"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar catalizador"
+  },
+  {
+    "code": "P0440",
+    "category": "P",
+    "titulo": "Fallo en el sistema de control de emisiones de evaporacion (EVAP)",
+    "description": "Fuga o fallo en el sistema EVAP.",
+    "causas": [
+      "Tapa de gasolina suelta",
+      "Valvula purgadora defectuosa",
+      "Fuga en tuberia"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Olor a gasolina"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar tapa y sistema EVAP"
+  },
+  {
+    "code": "P0441",
+    "category": "P",
+    "titulo": "Flujo incorrecto en el sistema EVAP",
+    "description": "El flujo de purga del sistema EVAP es incorrecto.",
+    "causas": [
+      "Valvula de purga defectuosa",
+      "Tuberia obstruida"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar valvula de purga"
+  },
+  {
+    "code": "P0442",
+    "category": "P",
+    "titulo": "Fuga pequena detectada en el sistema EVAP",
+    "description": "Se detecto una fuga pequena en el sistema EVAP.",
+    "causas": [
+      "Tapa de gasolina",
+      "Manguera suelta",
+      "O-ring danado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Olor a gasolina leve"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar tapa y conexiones"
+  },
+  {
+    "code": "P0443",
+    "category": "P",
+    "titulo": "Fallo en el circuito de la valvula de purga EVAP",
+    "description": "Problema electrico en la valvula de purga.",
+    "causas": [
+      "Valvula defectuosa",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Check engine"
+    ],
+    "urgencia": "media",
+    "reparacion": "Reemplazar valvula de purga"
+  },
+  {
+    "code": "P0455",
+    "category": "P",
+    "titulo": "Fuga grande detectada en el sistema EVAP",
+    "description": "Se detecto una fuga significativa en el sistema EVAP.",
+    "causas": [
+      "Tapa de gasolina suelta",
+      "Tuberia rota",
+      "Tanque danado"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Olor fuerte a gasolina"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Inspeccionar todo el sistema EVAP"
+  },
+  {
+    "code": "P0500",
+    "category": "P",
+    "titulo": "Fallo en el sensor de velocidad del vehiculo",
+    "description": "Sensor VSS defectuoso o circuito problematico.",
+    "causas": [
+      "Sensor VSS defectuoso",
+      "Cableado",
+      "Cluster de instrumentos"
+    ],
+    "sintomas": [
+      "Velocimetro no funciona",
+      "Check engine"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor VSS"
+  },
+  {
+    "code": "P0505",
+    "category": "P",
+    "titulo": "Fallo en el sistema de control de marcha lenta",
+    "description": "El control de marcha lenta no funciona correctamente.",
+    "causas": [
+      "Mariposa de admision sucia",
+      "Fuga de vacio",
+      "Actuador IAC defectuoso"
+    ],
+    "sintomas": [
+      "Motor se apaga",
+      "Marcha lenta irregular"
+    ],
+    "urgencia": "media",
+    "reparacion": "Limpiar mariposa y verificar IAC"
+  },
+  {
+    "code": "P0506",
+    "category": "P",
+    "titulo": "Marcha lenta menor a la esperada",
+    "description": "El RPM en ralenti es menor al especificado.",
+    "causas": [
+      "Fuga de vacio",
+      "Mariposa sucia",
+      "IAC defectuoso"
+    ],
+    "sintomas": [
+      "Motor se apaga en ralenti"
+    ],
+    "urgencia": "media",
+    "reparacion": "Limpiar sistema de admision"
+  },
+  {
+    "code": "P0507",
+    "category": "P",
+    "titulo": "Marcha lenta mayor a la esperada",
+    "description": "El RPM en ralenti es mayor al especificado.",
+    "causas": [
+      "Fuga de vacio",
+      "IAC defectuoso",
+      "Mariposa atascada"
+    ],
+    "sintomas": [
+      "Motor acelerado en ralenti"
+    ],
+    "urgencia": "media",
+    "reparacion": "Verificar sistema de admision"
+  },
+  {
+    "code": "P0560",
+    "category": "P",
+    "titulo": "Fallo en el circuito del sistema de carga",
+    "description": "Voltaje del sistema electrico fuera de rango.",
+    "causas": [
+      "Alternador defectuoso",
+      "Bateria vieja",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luces tenues",
+      "Bateria se descarga"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar alternador y bateria"
+  },
+  {
+    "code": "P0600",
+    "category": "P",
+    "titulo": "Fallo en el bus de comunicacion serial (CAN)",
+    "description": "Problema de comunicacion en la red CAN.",
+    "causas": [
+      "Cableado CAN danado",
+      "Modulo defectuoso",
+      "Conexion suelta"
+    ],
+    "sintomas": [
+      "Multiples luces check engine",
+      "Modulos no comunican"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Verificar red CAN con escaner especializado"
+  },
+  {
+    "code": "P0700",
+    "category": "P",
+    "titulo": "Fallo en el sistema de control de transmision",
+    "description": "La ECU de transmision detecto un fallo.",
+    "causas": [
+      "Sensor de velocidad de transmision",
+      "Solenoide",
+      "Nivel de liquido bajo"
+    ],
+    "sintomas": [
+      "Check engine",
+      "Transmision entra en modo limp"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Leer codigos de transmision con escaner"
+  },
+  {
+    "code": "B0001",
+    "category": "B",
+    "titulo": "Fallo en el circuito del airbag del conductor",
+    "description": "Problema electrico en el airbag del conductor.",
+    "causas": [
+      "Resorte del volante danado",
+      "Conexion suelta",
+      "Sensor de impacto"
+    ],
+    "sintomas": [
+      "Luz de airbag encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar sistema de airbags con escaner"
+  },
+  {
+    "code": "B0002",
+    "category": "B",
+    "titulo": "Fallo en el circuito del airbag del pasajero",
+    "description": "Problema electrico en el airbag del pasajero.",
+    "causas": [
+      "Conexion suelta",
+      "Sensor",
+      "Modulo"
+    ],
+    "sintomas": [
+      "Luz de airbag encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar sistema de airbags"
+  },
+  {
+    "code": "B0020",
+    "category": "B",
+    "titulo": "Fallo en el circuito del sensor de impacto izquierdo",
+    "description": "Sensor de impacto lateral izquierdo defectuoso.",
+    "causas": [
+      "Sensor danado",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz de airbag encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor de impacto"
+  },
+  {
+    "code": "B0021",
+    "category": "B",
+    "titulo": "Fallo en el circuito del sensor de impacto derecho",
+    "description": "Sensor de impacto lateral derecho defectuoso.",
+    "causas": [
+      "Sensor danado",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz de airbag encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor de impacto"
+  },
+  {
+    "code": "B1200",
+    "category": "B",
+    "titulo": "Fallo en el circuito de botones de control de climatizacion",
+    "description": "Problema en los botones del aire acondicionado.",
+    "causas": [
+      "Panel de control defectuoso",
+      "Conexion"
+    ],
+    "sintomas": [
+      "Controles de clima no funcionan"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar panel de control"
+  },
+  {
+    "code": "B1300",
+    "category": "B",
+    "titulo": "Fallo en el circuito de cierre centralizado",
+    "description": "Sistema de cierre centralizado no funciona.",
+    "causas": [
+      "Actuador defectuoso",
+      "Receptor de llave",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Cierre centralizado no responde"
+    ],
+    "urgencia": "baja",
+    "reparacion": "Verificar actuadores y receptor"
+  },
+  {
+    "code": "C0035",
+    "category": "C",
+    "titulo": "Fallo en el sensor de velocidad de la rueda delantera izquierda",
+    "description": "Sensor de velocidad de rueda (ABS) defectuoso.",
+    "causas": [
+      "Sensor sucio",
+      "Anillo reluctor danado",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz ABS encendida",
+      "ABS no funciona"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Limpiar o reemplazar sensor ABS"
+  },
+  {
+    "code": "C0036",
+    "category": "C",
+    "titulo": "Fallo en el sensor de velocidad de la rueda delantera derecha",
+    "description": "Sensor de velocidad de rueda derecha defectuoso.",
+    "causas": [
+      "Sensor sucio",
+      "Anillo reluctor",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz ABS encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Limpiar o reemplazar sensor ABS"
+  },
+  {
+    "code": "C0040",
+    "category": "C",
+    "titulo": "Fallo en el sensor de velocidad de la rueda trasera izquierda",
+    "description": "Sensor de velocidad de rueda trasera izquierda defectuoso.",
+    "causas": [
+      "Sensor defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz ABS encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor ABS"
+  },
+  {
+    "code": "C0041",
+    "category": "C",
+    "titulo": "Fallo en el sensor de velocidad de la rueda trasera derecha",
+    "description": "Sensor de velocidad de rueda trasera derecha defectuoso.",
+    "causas": [
+      "Sensor defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luz ABS encendida"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar sensor ABS"
+  },
+  {
+    "code": "C0051",
+    "category": "C",
+    "titulo": "Fallo en el sensor de direccion",
+    "description": "Sensor de angulo de direccion defectuoso.",
+    "causas": [
+      "Sensor defectuoso",
+      "Calibracion perdida"
+    ],
+    "sintomas": [
+      "Luz ABS encendida",
+      "Estabilidad afectada"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar y calibrar sensor"
+  },
+  {
+    "code": "C0060",
+    "category": "C",
+    "titulo": "Fallo en el circuito del actuador de freno delantero izquierdo",
+    "description": "Actuador de freno delantero izquierdo defectuoso.",
+    "causas": [
+      "Actuador defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Frenos irregulares"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar actuador de freno"
+  },
+  {
+    "code": "C0110",
+    "category": "C",
+    "titulo": "Fallo en la bomba del modulo ABS",
+    "description": "Motor de la bomba ABS defectuoso.",
+    "causas": [
+      "Motor de bomba defectuoso",
+      "Rele",
+      "Fusible"
+    ],
+    "sintomas": [
+      "Luz ABS encendida",
+      "ABS no funciona"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Reemplazar bomba ABS"
+  },
+  {
+    "code": "C0161",
+    "category": "C",
+    "titulo": "Fallo en el interruptor de luz de freno",
+    "description": "Interruptor de luz de freno defectuoso.",
+    "causas": [
+      "Interruptor desajustado",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Luces de freno no encienden o no apagan"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Ajustar o reemplazar interruptor"
+  },
+  {
+    "code": "C1200",
+    "category": "C",
+    "titulo": "Fallo en el modulo de control ABS",
+    "description": "Modulo de control ABS presenta interno.",
+    "causas": [
+      "Modulo ABS defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Multiples luces de seguridad"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Reemplazar modulo ABS"
+  },
+  {
+    "code": "U0001",
+    "category": "U",
+    "titulo": "Fallo en la red CAN de alta velocidad",
+    "description": "Problema de comunicacion en la red CAN principal.",
+    "causas": [
+      "Corto en la red CAN",
+      "Modulo defectuoso",
+      "Cableado"
+    ],
+    "sintomas": [
+      "Multiples luces de advertencia",
+      "Modulos no comunican"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Diagnosticar red CAN con escaner especializado"
+  },
+  {
+    "code": "U0073",
+    "category": "U",
+    "titulo": "Fallo de comunicacion del modulo de control de bus A",
+    "description": "Modulo no puede comunicarse en el bus A.",
+    "causas": [
+      "Cableado CAN",
+      "Modulo defectuoso"
+    ],
+    "sintomas": [
+      "Multiples fallas electricas"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar conexiones CAN"
+  },
+  {
+    "code": "U0100",
+    "category": "U",
+    "titulo": "Perdida de comunicacion con la ECU/PCM",
+    "description": "No se detecta comunicacion con la ECU principal.",
+    "causas": [
+      "ECU defectuosa",
+      "Cableado CAN",
+      "Conexion suelta"
+    ],
+    "sintomas": [
+      "Motor no arranca",
+      "Multiples luces"
+    ],
+    "urgencia": "critica",
+    "reparacion": "Verificar conexiones de la ECU"
+  },
+  {
+    "code": "U0121",
+    "category": "U",
+    "titulo": "Perdida de comunicacion con el modulo ABS",
+    "description": "No se detecta comunicacion con el modulo ABS.",
+    "causas": [
+      "Modulo ABS defectuoso",
+      "Cableado CAN"
+    ],
+    "sintomas": [
+      "Luz ABS encendida",
+      "Fallas ABS"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar modulo ABS"
+  },
+  {
+    "code": "U0140",
+    "category": "U",
+    "titulo": "Perdida de comunicacion con el modulo de control de carroceria",
+    "description": "No se detecta comunicacion con el BCM.",
+    "causas": [
+      "BCM defectuoso",
+      "Cableado CAN"
+    ],
+    "sintomas": [
+      "Multiples fallas electricas"
+    ],
+    "urgencia": "alta",
+    "reparacion": "Verificar BCM"
+  }
+]

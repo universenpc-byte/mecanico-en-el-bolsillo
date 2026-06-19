@@ -1,0 +1,7 @@
+node_modules/
+database/*.db
+.env
+android/
+build-apk.bat
+*.apk
+capacitor.config.json

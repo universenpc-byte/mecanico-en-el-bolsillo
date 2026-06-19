@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mecanico en el Bolsillo</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/img/icon-192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Pantalla de Login/Registro -->
+    <div id="auth-screen" class="screen active">
+      <div class="auth-container">
+        <div class="auth-logo">
+          <div class="logo-icon">&#128295;</div>
+          <h1>Mecanico<br>en el Bolsillo</h1>
+          <p>Tu experto automotriz con IA</p>
+        </div>
+        <div id="auth-forms">
+          <form id="login-form" class="auth-form active">
+            <h2>Iniciar Sesion</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Contrasena" required>
+            <button type="submit" class="btn-primary">Entrar</button>
+            <p class="auth-switch">No tienes cuenta? <a href="#" id="show-register">Registrate</a></p>
+          </form>
+          <form id="register-form" class="auth-form">
+            <h2>Crear Cuenta</h2>
+            <input type="text" id="reg-nombre" placeholder="Nombre completo" required>
+            <input type="email" id="reg-email" placeholder="Email" required>
+            <input type="password" id="reg-password" placeholder="Contrasena (min 6 caracteres)" required minlength="6">
+            <button type="submit" class="btn-primary">Crear Cuenta</button>
+            <p class="auth-switch">Ya tienes cuenta? <a href="#" id="show-login">Inicia sesion</a></p>
+          </form>
+        </div>
+        <div id="auth-error" class="error-msg"></div>
+      </div>
+    </div>
+
+    <!-- Pantalla Principal -->
+    <div id="main-screen" class="screen">
+      <!-- Header -->
+      <header id="main-header">
+        <div class="header-left">
+          <button id="menu-btn" class="icon-btn">&#9776;</button>
+          <h2 id="header-title">Inicio</h2>
+        </div>
+        <div class="header-right">
+          <button id="new-chat-header" class="icon-btn" title="Nuevo chat">&#10010;</button>
+        </div>
+      </header>
+
+      <!-- Sidebar Menu -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <div class="user-info">
+            <div class="avatar" id="user-avatar">U</div>
+            <span id="user-name-display">Usuario</span>
+          </div>
+          <button id="close-sidebar" class="icon-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+          <button data-view="home" class="nav-item active">&#127968; Inicio</button>
+          <button data-view="chat" class="nav-item">&#128172; Chat con IA</button>
+          <button data-view="codes" class="nav-item">&#128196; Codigos OBD</button>
+          <button data-view="favorites" class="nav-item">&#11088; Favoritos</button>
+          <button data-view="history" class="nav-item">&#128337; Historial</button>
+          <button data-view="profile" class="nav-item">&#128100; Mi perfil</button>
+        </nav>
+        <div class="sidebar-footer">
+          <button id="logout-btn" class="nav-item logout">&#128682; Cerrar sesion</button>
+        </div>
+      </div>
+      <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+      <!-- Contenido Principal -->
+      <main id="main-content">
+        <!-- Vista: Inicio -->
+        <div id="view-home" class="view active">
+          <div class="home-hero">
+            <div class="hero-icon">&#128295;</div>
+            <h2>Mecanico en el Bolsillo</h2>
+            <p>Preguntale a la IA sobre cualquier problema de tu vehiculo</p>
+            <button id="start-chat-btn" class="btn-primary btn-large">Empezar a preguntar</button>
+          </div>
+          <div class="tips-section">
+            <h3>&#128161; Tips del dia</h3>
+            <div id="tips-container" class="tips-grid"></div>
+          </div>
+          <div class="quick-actions">
+            <h3>Acceso rapido</h3>
+            <div class="actions-grid">
+              <button class="action-card" data-action="chat">
+                <span class="action-icon">&#128172;</span>
+                <span>Preguntar a la IA</span>
+              </button>
+              <button class="action-card" data-action="codes">
+                <span class="action-icon">&#128196;</span>
+                <span>Buscar codigo OBD</span>
+              </button>
+              <button class="action-card" data-action="favorites">
+                <span class="action-icon">&#11088;</span>
+                <span>Mis favoritos</span>
+              </button>
+              <button class="action-card" data-action="history">
+                <span class="action-icon">&#128337;</span>
+                <span>Historial</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vista: Chat -->
+        <div id="view-chat" class="view">
+          <div id="chat-container">
+            <div id="chat-messages">
+              <div class="welcome-msg">
+                <div class="welcome-icon">&#129302;</div>
+                <h3>Hola! Soy tu mecanico virtual</h3>
+                <p>Preguntame sobre codigos OBD, problemas de tu vehiculo, o cualquier duda mecanica.</p>
+                <div class="quick-questions">
+                  <button class="quick-q" data-q="Que significa el codigo P0300?">Que significa el codigo P0300?</button>
+                  <button class="quick-q" data-q="Mi motor vibra en ralenti, que puede ser?">Mi motor vibra en ralenti, que puede ser?</button>
+                  <button class="quick-q" data-q="Cada cuanto debo cambiar el aceite?">Cada cuanto debo cambiar el aceite?</button>
+                </div>
+              </div>
+            </div>
+            <form id="chat-form">
+              <div class="chat-input-area">
+                <textarea id="chat-input" placeholder="Escribe tu pregunta..." rows="1"></textarea>
+                <button type="submit" id="send-btn" class="send-btn">
+                  <span>&#10148;</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Vista: Codigos OBD -->
+        <div id="view-codes" class="view">
+          <div class="codes-header">
+            <h3>&#128270; Buscar Codigo OBD</h3>
+            <div class="search-box">
+              <input type="text" id="codes-search" placeholder="Ej: P0300, motor, catalizador...">
+            </div>
+            <div class="category-filters">
+              <button class="filter-btn active" data-cat="">Todos</button>
+              <button class="filter-btn" data-cat="P">P - Powertrain</button>
+              <button class="filter-btn" data-cat="B">B - Body</button>
+              <button class="filter-btn" data-cat="C">C - Chassis</button>
+              <button class="filter-btn" data-cat="U">U - Network</button>
+            </div>
+          </div>
+          <div id="codes-results" class="codes-list"></div>
+          <div id="codes-pagination" class="pagination"></div>
+        </div>
+
+        <!-- Vista: Detalle de Codigo -->
+        <div id="view-code-detail" class="view">
+          <button class="back-btn" id="back-to-codes">&larr; Volver a codigos</button>
+          <div id="code-detail-content"></div>
+        </div>
+
+        <!-- Vista: Favoritos -->
+        <div id="view-favorites" class="view">
+          <h3>&#11088; Mis Favoritos</h3>
+          <div id="favorites-container" class="favorites-list"></div>
+          <div id="no-favorites" class="empty-state">
+            <span class="empty-icon">&#11088;</span>
+            <p>No tienes favoritos aun</p>
+            <small>Guarda codigos o mensajes importantes</small>
+          </div>
+        </div>
+
+        <!-- Vista: Historial -->
+        <div id="view-history" class="view">
+          <h3>&#128337; Historial de Chats</h3>
+          <div id="history-container" class="history-list"></div>
+          <div id="no-history" class="empty-state">
+            <span class="empty-icon">&#128337;</span>
+            <p>No hay conversaciones aun</p>
+            <small>Empieza a chatear con el mecanico IA</small>
+          </div>
+        </div>
+
+        <!-- Vista: Perfil -->
+        <div id="view-profile" class="view">
+          <div class="profile-header">
+            <div class="profile-avatar" id="profile-avatar">U</div>
+            <h3 id="profile-name">Mi Perfil</h3>
+          </div>
+          <form id="profile-form" class="profile-form">
+            <label>Nombre</label>
+            <input type="text" id="profile-nombre" placeholder="Tu nombre">
+            <label>Marca del vehiculo</label>
+            <input type="text" id="profile-marca" placeholder="Ej: Toyota">
+            <label>Modelo</label>
+            <input type="text" id="profile-modelo" placeholder="Ej: Corolla">
+            <label>Ano</label>
+            <input type="number" id="profile-ano" placeholder="Ej: 2020" min="1900" max="2030">
+            <button type="submit" class="btn-primary">Guardar Cambios</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/codes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/history.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
