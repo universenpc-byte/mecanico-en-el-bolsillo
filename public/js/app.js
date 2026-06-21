@@ -1,33 +1,13 @@
-﻿const API = '';
-let currentUser = null;
-let token = localStorage.getItem('token');
-
-function setToken(t) {
-  token = t;
-  if (t) localStorage.setItem('token', t);
-  else localStorage.removeItem('token');
-}
-
-function authHeaders() {
-  return token ? { 'Authorization': `Bearer ${token}` } : {};
-}
+﻿const API = (
+  typeof window !== 'undefined' &&
+  typeof window.Capacitor !== 'undefined' &&
+  window.Capacitor.isNativePlatform()
+) ? 'https://mecanico-en-el-bolsillo.onrender.com' : '';
 
 async function apiFetch(url, options = {}) {
-  const headers = { 'Content-Type': 'application/json', ...authHeaders(), ...options.headers };
+  const headers = { 'Content-Type': 'application/json', ...options.headers };
   const res = await fetch(API + url, { ...options, headers });
-  if (res.status === 401) {
-    setToken(null);
-    currentUser = null;
-    showScreen('auth');
-    throw new Error('Sesion expirada');
-  }
   return res;
-}
-
-function showScreen(name) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  const el = document.getElementById(name + '-screen');
-  if (el) el.classList.add('active');
 }
 
 function showView(viewName) {
@@ -35,7 +15,7 @@ function showView(viewName) {
   const el = document.getElementById('view-' + viewName);
   if (el) el.classList.add('active');
 
-  const titles = { home: 'Inicio', chat: 'Chat con IA', codes: 'Codigos OBD', favorites: 'Favoritos', history: 'Historial', profile: 'Mi perfil', 'code-detail': 'Detalle del Codigo' };
+  const titles = { home: 'Inicio', chat: 'Chat con IA', codes: 'Codigos OBD', favorites: 'Favoritos', history: 'Historial', 'code-detail': 'Detalle del Codigo' };
   document.getElementById('header-title').textContent = titles[viewName] || viewName;
 
   document.querySelectorAll('.nav-item[data-view]').forEach(n => {
@@ -69,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btn.dataset.view === 'codes') loadCodes();
       if (btn.dataset.view === 'favorites') loadFavorites();
       if (btn.dataset.view === 'history') loadHistory();
-      if (btn.dataset.view === 'profile') loadProfile();
     });
   });
 
@@ -89,36 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     resetChat();
   });
 
-  document.getElementById('logout-btn').addEventListener('click', () => {
-    setToken(null);
-    currentUser = null;
-    showScreen('auth');
-    closeSidebar();
-  });
-
   loadTips();
-
-  if (token) {
-    apiFetch('/api/auth/profile').then(r => r.json()).then(user => {
-      if (user.id) {
-        currentUser = user;
-        showScreen('main');
-        updateUserDisplay();
-      } else {
-        showScreen('auth');
-      }
-    }).catch(() => showScreen('auth'));
-  }
 });
-
-function updateUserDisplay() {
-  if (!currentUser) return;
-  const initial = (currentUser.nombre || currentUser.email || 'U')[0].toUpperCase();
-  document.getElementById('user-avatar').textContent = initial;
-  document.getElementById('user-name-display').textContent = currentUser.nombre || currentUser.email;
-  document.getElementById('profile-avatar').textContent = initial;
-  document.getElementById('profile-name').textContent = currentUser.nombre || currentUser.email;
-}
 
 async function loadTips() {
   try {

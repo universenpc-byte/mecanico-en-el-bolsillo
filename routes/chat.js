@@ -1,5 +1,4 @@
 ﻿const express = require('express');
-const authMiddleware = require('../middleware/auth');
 
 const PROVIDERS = {
   nvidia: {
@@ -15,7 +14,7 @@ const PROVIDERS = {
 };
 
 function getProvider() {
-  const name = process.env.AI_PROVIDER || 'nvidia';
+  const name = process.env.AI_PROVIDER || 'groq';
   const provider = PROVIDERS[name];
   const apiKey = process.env[provider.keyEnv];
   if (!apiKey) {
@@ -48,7 +47,7 @@ Responde en espanol, de forma amigable y tecnica pero comprensible para no exper
 Cuando no tengas certeza, recomienda llevar el vehiculo a un mecanico certificado.
 No inventes codigos OBD que no existen. Si no estas seguro de algo, di claramente que no tienes suficiente informacion.`;
 
-    router.post('/', authMiddleware, async (req, res) => {
+    router.post('/', async (req, res) => {
     try {
       const { messages, chatId } = req.body;
       if (!messages || !Array.isArray(messages)) {
@@ -69,7 +68,7 @@ No inventes codigos OBD que no existen. Si no estas seguro de algo, di clarament
           : 'Nueva conversacion';
         const chatResult = db.prepare(
           'INSERT INTO chats (user_id, titulo) VALUES (?, ?)'
-        ).run(req.user.id, titulo);
+        ).run(req.userId, titulo);
         currentChatId = chatResult.lastInsertRowid;
 
         for (const msg of messages) {
@@ -78,7 +77,7 @@ No inventes codigos OBD que no existen. Si no estas seguro de algo, di clarament
           ).run(currentChatId, msg.role, msg.content);
         }
       } else {
-        const chat = db.prepare('SELECT id FROM chats WHERE id = ? AND user_id = ?').get(currentChatId, req.user.id);
+        const chat = db.prepare('SELECT id FROM chats WHERE id = ? AND user_id = ?').get(currentChatId, req.userId);
         if (!chat) return res.status(404).json({ error: 'Chat no encontrado' });
 
         const lastMsg = messages[messages.length - 1];

@@ -60,37 +60,3 @@
     container.innerHTML = '<div class="empty-state"><p>Error al cargar historial</p></div>';
   }
 }
-
-async function loadProfile() {
-  if (!currentUser) return;
-  document.getElementById('profile-nombre').value = currentUser.nombre || '';
-  document.getElementById('profile-marca').value = currentUser.vehiculo_marca || '';
-  document.getElementById('profile-modelo').value = currentUser.vehiculo_modelo || '';
-  document.getElementById('profile-ano').value = currentUser.vehiculo_ano || '';
-
-  document.getElementById('profile-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    try {
-      const res = await apiFetch('/api/auth/profile', {
-        method: 'PUT',
-        body: JSON.stringify({
-          nombre: document.getElementById('profile-nombre').value,
-          vehiculo_marca: document.getElementById('profile-marca').value,
-          vehiculo_modelo: document.getElementById('profile-modelo').value,
-          vehiculo_ano: parseInt(document.getElementById('profile-ano').value) || 0
-        })
-      });
-      const data = await res.json();
-      if (data.mensaje) {
-        currentUser.nombre = document.getElementById('profile-nombre').value;
-        currentUser.vehiculo_marca = document.getElementById('profile-marca').value;
-        currentUser.vehiculo_modelo = document.getElementById('profile-modelo').value;
-        currentUser.vehiculo_ano = parseInt(document.getElementById('profile-ano').value) || 0;
-        updateUserDisplay();
-        alert('Perfil actualizado');
-      }
-    } catch (e) {
-      alert('Error al guardar');
-    }
-  });
-}

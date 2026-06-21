@@ -106,10 +106,7 @@ async function sendMessage(text) {
   try {
     const res = await fetch(API + '/api/chat', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        ...authHeaders()
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: chatHistory, chatId: currentChatId })
     });
 

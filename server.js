@@ -8,19 +8,29 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const db = initDatabase();
+
+const DEFAULT_USER_ID = 1;
+
+const existing = db.prepare('SELECT id FROM users WHERE id = ?').get(DEFAULT_USER_ID);
+if (!existing) {
+  db.prepare('INSERT OR IGNORE INTO users (id, email, nombre) VALUES (?, ?, ?)').run(1, 'usuario@app.com', 'Usuario');
+}
 console.log('Base de datos inicializada');
 
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const createAuthRouter = require('./routes/auth');
+app.use((req, res, next) => {
+  req.userId = DEFAULT_USER_ID;
+  next();
+});
+
 const createChatRouter = require('./routes/chat');
 const createCodesRouter = require('./routes/codes');
 const createFavoritesRouter = require('./routes/favorites');
 const createHistoryRouter = require('./routes/history');
 
-app.use('/api/auth', createAuthRouter(db));
 app.use('/api/chat', createChatRouter(db));
 app.use('/api/codes', createCodesRouter());
 app.use('/api/favorites', createFavoritesRouter(db));
@@ -43,11 +53,10 @@ app.get('/api/tips', (req, res) => {
   res.json(randomTips);
 });
 
-app.get('/{*splat}', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
   console.log(`Mecanico en el Bolsillo corriendo en http://localhost:${PORT}`);
 });
-
